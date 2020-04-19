@@ -3,13 +3,15 @@
 		{{>title text="Subjective Guess Who"}}
 
 		<div class="select-game">
+			<h2>Select a game:</h2>
 			<select>
-				<option selected disabled>select a game</option>
+				<option selected disabled>pick a game</option>
 				<option data-board="stock">Stock people</option>
 				<option data-board="mps_1">MPs (1)</option>
 				<option data-board="mps_2">MPs (2)</option>
 				<option data-board="mps_3">MPs (3)</option>
-				<option data-board="mps_4">MPs (3)</option>
+				<option data-board="mps_4">MPs (4)</option>
+				<option data-board="mps_5">MPs (5)</option>
 			</select>
 		</div>
 	</div>
@@ -17,12 +19,17 @@
 
 	<div class="game-container">
 		<div class="select-role">
-			Are you the...?
-			<button>Chooser</button>
-			<button>Who-ser</button>
+			<h2>Are you the...?</h2>
+			<button data-role="choose" class="btn_choose">Chooser</button>
+			<button data-role="guess" class="btn_guess">Who-ser</button>
 		</div>
-		<div class="selected-person"></div>
-		<div class="board-container">
+		<div class="selected-person">
+			
+		</div>
+		<div class="ready-to-play" style="display: none;">
+			<button class="btn_play">Play</button>
+		</div>
+		<div class="board-container" style="display: none;">
 		</div>
 	</div>
 </div>
