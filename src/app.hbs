@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="intro">
+		{{>title text="Subjective Guess Who"}}
+
+		<div class="select-game">
+			<select>
+				<option selected disabled>select a game</option>
+				<option data-board="stock">Stock people</option>
+				<option data-board="mps_1">MPs (1)</option>
+				<option data-board="mps_2">MPs (2)</option>
+				<option data-board="mps_3">MPs (3)</option>
+				<option data-board="mps_4">MPs (3)</option>
+			</select>
+		</div>
+	</div>
+	
+
+	<div class="game-container">
+		<div class="select-role">
+			Are you the...?
+			<button>Chooser</button>
+			<button>Who-ser</button>
+		</div>
+		<div class="selected-person"></div>
+		<div class="board-container">
+		</div>
+	</div>
+</div>
